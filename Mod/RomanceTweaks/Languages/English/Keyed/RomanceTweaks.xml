@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RomanceTweaks.DebugMode>Debug Logging</RomanceTweaks.DebugMode>
+    <RomanceTweaks.RomanceChanceModifier>Romance Chance Modifier (General)</RomanceTweaks.RomanceChanceModifier>
+    <RomanceTweaks.RomanceChanceModifierSingle>Romance Chance Modifier (Singles)</RomanceTweaks.RomanceChanceModifierSingle>
+    <RomanceTweaks.RomanceSuccessModifier>Romance Success Modifier</RomanceTweaks.RomanceSuccessModifier>
+    <RomanceTweaks.BreakupChanceModifier>Breakup Chance Modifier</RomanceTweaks.BreakupChanceModifier>
+</LanguageData>
