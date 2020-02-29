@@ -6,6 +6,12 @@ namespace RomanceTweaks
 {
     public class RomanceTweakMod : ModBase
     {
+        public RomanceTweakMod() : base()
+        {
+            // This should be set automatically but for some reason isn't...
+            Settings.EntryName = ModContentPack.Name;
+        }
+
         public override string ModIdentifier => "RomanceTweaks";
 
         internal static SettingHandle<bool> DebugMode;
