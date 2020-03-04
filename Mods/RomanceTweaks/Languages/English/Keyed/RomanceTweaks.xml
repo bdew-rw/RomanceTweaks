@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<RomanceTweaks.DebugMode>Debug Logging</RomanceTweaks.DebugMode>
+    <RomanceTweaks.DebugMode>Debug Logging</RomanceTweaks.DebugMode>
     <RomanceTweaks.RomanceChanceModifier>Romance Chance Modifier (General)</RomanceTweaks.RomanceChanceModifier>
+    <RomanceTweaks.RomanceChanceModifierDesc>General chance modifier for any social interaction to be romantic. Default: 1</RomanceTweaks.RomanceChanceModifierDesc>
     <RomanceTweaks.RomanceChanceModifierSingle>Romance Chance Modifier (Singles)</RomanceTweaks.RomanceChanceModifierSingle>
+    <RomanceTweaks.RomanceChanceModifierSingleDesc>Additional factor applied if both pawns are single. Default: 1</RomanceTweaks.RomanceChanceModifierSingleDesc>
+    <RomanceTweaks.RomanceChanceModifierDifferentFaction>Romance Chance Modifier (Different Faction)</RomanceTweaks.RomanceChanceModifierDifferentFaction>
+    <RomanceTweaks.RomanceChanceModifierDifferentFactionDesc>If pawns are from different factions, also apply this modifier. Set below 1 to discourage pawns to romance visitors. Also applies to guests from different factions. Default: 1</RomanceTweaks.RomanceChanceModifierDifferentFactionDesc>
+    <RomanceTweaks.IncestModifier_Close>Romance Chance Modifier (Close Incest)</RomanceTweaks.IncestModifier_Close>
+    <RomanceTweaks.IncestModifier_Close_Desc>Factor for Sibling / Halfsibling / Parent / Child. Default: 1. Note: Unless romanceChanceFactor is changed in defs, close incest is extremely unlikely regardless of factor set here.</RomanceTweaks.IncestModifier_Close_Desc>
+    <RomanceTweaks.IncestModifier_Medium>Romance Chance Modifier (Medium Incest)</RomanceTweaks.IncestModifier_Medium>
+    <RomanceTweaks.IncestModifier_Medium_Desc>Factor for Cousin / Uncle / Aunt / Nephew / Niece / Grandparent / Grandchild. Default: 1</RomanceTweaks.IncestModifier_Medium_Desc>
+    <RomanceTweaks.IncestModifier_Far>Romance Chance Modifier (Far Incest)</RomanceTweaks.IncestModifier_Far>
+    <RomanceTweaks.IncestModifier_Far_Desc>Factor for Great-Grandparent / Great-Grandchild / Granduncle / Grandaunt / Kin. Default: 1</RomanceTweaks.IncestModifier_Far_Desc>
     <RomanceTweaks.RomanceSuccessModifier>Romance Success Modifier</RomanceTweaks.RomanceSuccessModifier>
+    <RomanceTweaks.RomanceSuccessModifier_Desc>Factor for the chance that a romance attempt is successful. Default: 1</RomanceTweaks.RomanceSuccessModifier_Desc>
     <RomanceTweaks.BreakupChanceModifier>Breakup Chance Modifier</RomanceTweaks.BreakupChanceModifier>
+    <RomanceTweaks.BreakupChanceModifier_Desc>Probably influences the chance that a social interaction of a couple results in a breakup. Default: 1</RomanceTweaks.BreakupChanceModifier_Desc>
 </LanguageData>
