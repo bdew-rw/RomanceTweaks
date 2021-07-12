@@ -13,11 +13,31 @@ namespace RomanceTweaks
         // ReSharper disable once UnusedMember.Global
         public static float Postfix(float __result, Pawn initiator, Pawn recipient)
         {
+            if (__result == 0) return __result;
+
             float mod = RomanceTweakMod.RomanceChanceModifier;
+            string cats = "General";
+
             if (RomanceUtils.IsSingle(initiator) && RomanceUtils.IsSingle(recipient))
+            {
                 mod *= RomanceTweakMod.RomanceChanceModifierSingle;
+                cats += ", Singles";
+            }
+            else if (!RomanceUtils.IsLover(initiator, recipient))
+            {
+                // If one of them isn't single, and they arent in a relationship it must be cheating
+                mod *= RomanceTweakMod.RomanceChanceModifierCheating;
+                cats += ", Cheating";
+            }
+
+            if (initiator.Faction != recipient.Faction)
+            {
+                mod *= RomanceTweakMod.RomanceChanceModifierFaction;
+                cats += ", CrossFaction";
+            }
+
             if (RomanceTweakMod.DebugMode)
-                Log.Message($"[RomTw] Romance Chance {initiator.Name.ToStringShort} -> {recipient.Name.ToStringShort} : {__result} -> {__result * mod}");
+                Log.Message($"[RomTw] Romance Chance {initiator.Name.ToStringShort} -> {recipient.Name.ToStringShort} : {__result} -> {__result * mod} [{cats}]");
             return __result * mod;
         }
     }
@@ -31,6 +51,7 @@ namespace RomanceTweaks
         // ReSharper disable once UnusedMember.Global
         public static float Postfix(float __result, Pawn initiator, Pawn recipient)
         {
+            if (__result == 0) return __result;
             float mod = RomanceTweakMod.RomanceSuccessModifier;
             if (RomanceTweakMod.DebugMode)
                 Log.Message($"[RomTw] Romance Success {initiator.Name.ToStringShort} -> {recipient.Name.ToStringShort} : {__result} -> {__result * mod}");

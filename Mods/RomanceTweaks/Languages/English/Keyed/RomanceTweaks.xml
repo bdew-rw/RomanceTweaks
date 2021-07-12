@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<RomanceTweaks.DebugMode>Debug Logging</RomanceTweaks.DebugMode>
+    <RomanceTweaks.DebugMode>Debug Logging</RomanceTweaks.DebugMode>
     <RomanceTweaks.RomanceChanceModifier>Romance Chance Modifier (General)</RomanceTweaks.RomanceChanceModifier>
     <RomanceTweaks.RomanceChanceModifierSingle>Romance Chance Modifier (Singles)</RomanceTweaks.RomanceChanceModifierSingle>
+    <RomanceTweaks.RomanceChanceModifierCheating>Romance Chance Modifier (Cheating)</RomanceTweaks.RomanceChanceModifierCheating>
+    <RomanceTweaks.RomanceChanceModifierFaction>Romance Chance Modifier (Cross Faction)</RomanceTweaks.RomanceChanceModifierFaction>
     <RomanceTweaks.RomanceSuccessModifier>Romance Success Modifier</RomanceTweaks.RomanceSuccessModifier>
     <RomanceTweaks.BreakupChanceModifier>Breakup Chance Modifier</RomanceTweaks.BreakupChanceModifier>
+
+    <RomanceTweaks.RomanceChanceModifier.Desc>Multiplier applied to the chance for ALL romantic interactions</RomanceTweaks.RomanceChanceModifier.Desc>
+    <RomanceTweaks.RomanceChanceModifierSingle.Desc>Multiplier applied to the chance for romantic interactions when both pawns are single</RomanceTweaks.RomanceChanceModifierSingle.Desc>
+    <RomanceTweaks.RomanceChanceModifierCheating.Desc>Multiplier applied to the chance for romantic interactions when one (or both) pawns are in a relationship with a different pawn</RomanceTweaks.RomanceChanceModifierCheating.Desc>
+    <RomanceTweaks.RomanceChanceModifierFaction.Desc>Multiplier applied to the chance for romantic interactions when the pawns belong to a different faction</RomanceTweaks.RomanceChanceModifierFaction.Desc>
+    <RomanceTweaks.RomanceSuccessModifier.Desc>Success chance multiplier applied to all romantic interactions</RomanceTweaks.RomanceSuccessModifier.Desc>
+    <RomanceTweaks.BreakupChanceModifier.Desc>Breakup chance multiplier for existing relationships</RomanceTweaks.BreakupChanceModifier.Desc>
 </LanguageData>

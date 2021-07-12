@@ -12,6 +12,7 @@ namespace RomanceTweaks
         // ReSharper disable once UnusedMember.Global
         public static float Postfix(float __result, Pawn initiator, Pawn recipient)
         {
+            if (__result == 0) return __result;
             float mod = RomanceTweakMod.BreakupChanceModifier;
             if (RomanceTweakMod.DebugMode)
                 Log.Message($"[RomTw] Breakup Chance {initiator.Name.ToStringShort} -> {recipient.Name.ToStringShort} : {__result} -> {__result * mod}");
