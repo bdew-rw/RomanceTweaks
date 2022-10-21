@@ -13,8 +13,8 @@ namespace RomanceTweaks
         public static float Postfix(float __result, Pawn initiator, Pawn recipient)
         {
             if (__result == 0) return __result;
-            float mod = RomanceTweakMod.BreakupChanceModifier;
-            if (RomanceTweakMod.DebugMode)
+            float mod = RomanceTweaksSettings.BreakupChanceModifier;
+            if (RomanceTweaksSettings.DebugMode)
                 Log.Message($"[RomTw] Breakup Chance {initiator.Name.ToStringShort} -> {recipient.Name.ToStringShort} : {__result} -> {__result * mod}");
             return __result * mod;
         }

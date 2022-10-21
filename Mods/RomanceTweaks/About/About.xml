@@ -17,13 +17,26 @@
 	    <steamWorkshopUrl>steam://steamcommunity.com/workshop/filedetails/?id=818773962</steamWorkshopUrl>
 	  </li>
 	</modDependencies>
+	<modDependenciesByVersion>
+		<v1.4>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			</li>
+		</v1.4>
+	</modDependenciesByVersion>
 	<loadAfter>
       <li>UnlimitedHugs.HugsLib</li>
     </loadAfter>
+	<loadAfterByVersion>
+		<v1.4>
+      		<li>brrainz.harmony</li>
+		</v1.4>
+    </loadAfterByVersion>
 	<url>https://github.com/bdew-rw/RomanceTweaks</url>
 	<description>
 Allows tweaking romance interaction chances.
-
-Requires HugsLib - https://steamcommunity.com/workshop/filedetails/?id=818773962
 	</description>
 </ModMetaData>

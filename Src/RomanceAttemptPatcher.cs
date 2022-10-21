@@ -15,28 +15,28 @@ namespace RomanceTweaks
         {
             if (__result == 0) return __result;
 
-            float mod = RomanceTweakMod.RomanceChanceModifier;
+            float mod = RomanceTweaksSettings.RomanceChanceModifier;
             string cats = "General";
 
             if (RomanceUtils.IsSingle(initiator) && RomanceUtils.IsSingle(recipient))
             {
-                mod *= RomanceTweakMod.RomanceChanceModifierSingle;
+                mod *= RomanceTweaksSettings.RomanceChanceModifierSingle;
                 cats += ", Singles";
             }
             else if (!RomanceUtils.IsLover(initiator, recipient))
             {
                 // If one of them isn't single, and they arent in a relationship it must be cheating
-                mod *= RomanceTweakMod.RomanceChanceModifierCheating;
+                mod *= RomanceTweaksSettings.RomanceChanceModifierCheating;
                 cats += ", Cheating";
             }
 
             if (initiator.Faction != recipient.Faction)
             {
-                mod *= RomanceTweakMod.RomanceChanceModifierFaction;
+                mod *= RomanceTweaksSettings.RomanceChanceModifierFaction;
                 cats += ", CrossFaction";
             }
 
-            if (RomanceTweakMod.DebugMode)
+            if (RomanceTweaksSettings.DebugMode)
                 Log.Message($"[RomTw] Romance Chance {initiator.Name.ToStringShort} -> {recipient.Name.ToStringShort} : {__result} -> {__result * mod} [{cats}]");
             return __result * mod;
         }
@@ -52,8 +52,8 @@ namespace RomanceTweaks
         public static float Postfix(float __result, Pawn initiator, Pawn recipient)
         {
             if (__result == 0) return __result;
-            float mod = RomanceTweakMod.RomanceSuccessModifier;
-            if (RomanceTweakMod.DebugMode)
+            float mod = RomanceTweaksSettings.RomanceSuccessModifier;
+            if (RomanceTweaksSettings.DebugMode)
                 Log.Message($"[RomTw] Romance Success {initiator.Name.ToStringShort} -> {recipient.Name.ToStringShort} : {__result} -> {__result * mod}");
             return __result * mod;
         }
