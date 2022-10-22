@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using HarmonyLib;
+using RimWorld;
 using System;
 using System.Reflection.Emit;
 using UnityEngine;
@@ -32,11 +33,14 @@ namespace RomanceTweaks
 
     public class RomanceTweakMod : Mod
     {
-        RomanceTweaksSettings settings;
+        public readonly RomanceTweaksSettings settings;
 
         public RomanceTweakMod(ModContentPack content) : base(content)
         {
             this.settings = GetSettings<RomanceTweaksSettings>();
+            var harmony = new Harmony("BDew.RomanceTweaks");
+            harmony.PatchAll();
+            Log.Message("Romance Tweaks loaded");
         }
 
         private static void AddSettingsNumberLine(Listing_Standard listing, string name, ref float val, float min, float max)
