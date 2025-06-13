@@ -10,6 +10,7 @@
       <li>1.3</li>
       <li>1.4</li>
       <li>1.5</li>
+      <li>1.6</li>
     </supportedVersions>
     <modDependencies>
       <li>
@@ -35,6 +36,14 @@
                 <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
             </li>
         </v1.5>
+        <v1.6>
+            <li>
+                <packageId>brrainz.harmony</packageId>
+                <displayName>Harmony</displayName>
+                <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+                <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            </li>
+        </v1.6>
     </modDependenciesByVersion>
     <loadAfter>
         <li>UnlimitedHugs.HugsLib</li>
@@ -46,6 +55,9 @@
         <v1.5>
             <li>brrainz.harmony</li>
         </v1.5>
+        <v1.6>
+            <li>brrainz.harmony</li>
+        </v1.6>
     </loadAfterByVersion>
     <url>https://github.com/bdew-rw/RomanceTweaks</url>
     <description>
